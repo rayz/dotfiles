@@ -19,6 +19,7 @@ map <Leader>n :NERDTreeToggle<CR>
 map <Leader>ww <C-w>w
 map <silent> <Leader>gd :YcmCompleter GoTo<CR>
 map <Leader>p :CtrlP<CR>
+map <Leader>gi :GoImports<CR>
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -43,6 +44,8 @@ Plugin 'cespare/vim-toml'
 
 Plugin 'mbbill/undotree'
 
+Plugin 'fatih/vim-go'
+
 call vundle#end()            
 
 autocmd vimenter * ++nested colorscheme gruvbox
@@ -60,6 +63,9 @@ inoremap [ []<left>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
+
+" yank end
+nnoremap Y y$
 
 " for no weird bar when splitting terminals
 highlight VertSplit guibg=NONE cterm=NONE
