@@ -36,3 +36,5 @@ opt.splitbelow = true
 opt.iskeyword:append("-")
 
 opt.undofile = true
+
+opt.showmode = false
