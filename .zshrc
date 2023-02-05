@@ -37,10 +37,6 @@ mcd () {
   mkdir -p "$1" && cd "$1"
 }
 
-function cp () {
-    cat $1 | pbcopy;
-}
-
 tempy () {
     cp ~/algorithms/template.py $1.py
 }
