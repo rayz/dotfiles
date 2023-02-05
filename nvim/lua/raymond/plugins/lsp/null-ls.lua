@@ -22,6 +22,7 @@ null_ls.setup({
 		formatting.rustfmt, -- rust formatter
 		formatting.goimports, -- go import formatter
 		formatting.black, -- python formatter
+		formatting.clang_format,
 	},
 	-- configure format on save
 	on_attach = function(current_client, bufnr)

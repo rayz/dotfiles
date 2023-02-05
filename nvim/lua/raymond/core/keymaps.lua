@@ -47,4 +47,12 @@ keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
 
 -- bufferline
-keymap.set("n", "Q", ":bdelete!<cr>")
+keymap.set("n", "Q", "<cmd>Bdelete!<cr>")
+keymap.set("n", "[b", ":BufferLineMovePrev<CR>")
+keymap.set("n", "]b", ":BufferLineMoveNext<CR>")
+keymap.set("n", "<TAB>", ":BufferLineCycleNext<CR>")
+keymap.set("n", "<S-TAB>", ":BufferLineCyclePrev<CR>")
+
+-- vimtex
+keymap.set("n", "<leader>ll", ":VimtexCompile<CR>")
+keymap.set("n", "<leader>lv", ":VimtexView<CR>")

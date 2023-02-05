@@ -35,6 +35,7 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim")
 
 	use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
+	use({ "catppuccin/nvim", as = "catppuccin" })
 
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
@@ -123,6 +124,10 @@ return packer.startup(function(use)
 
 	-- bufferline
 	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
+	use("moll/vim-bbye")
+
+	-- vimtex
+	use("lervag/vimtex")
 
 	if packer_bootstrap then
 		require("packer").sync()

@@ -72,7 +72,12 @@ lspconfig["gopls"].setup({
 	flags = lsp_flags,
 })
 
-lspconfig["pyright"].setup({
+lspconfig["clangd"].setup({
+	on_attach = on_attach,
+	flags = lsp_flags,
+})
+
+lspconfig["jedi_language_server"].setup({
 	on_attach = on_attach,
 	flags = lsp_flags,
 })

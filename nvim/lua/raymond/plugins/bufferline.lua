@@ -1,5 +1,6 @@
 require("bufferline").setup({
 	options = {
+		close_command = "Bdelete! %d",
 		offsets = {
 			{
 				filetype = "NvimTree",
@@ -8,10 +9,6 @@ require("bufferline").setup({
 				separator = true,
 			},
 		},
+		diagnostics = "nvim_lsp",
 	},
 })
-
-vim.cmd([[
-nnoremap <silent><TAB> :BufferLineCycleNext<CR>
-nnoremap <silent><S-TAB> :BufferLineCyclePrev<CR>
-]])
